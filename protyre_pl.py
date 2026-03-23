@@ -119,7 +119,7 @@ with col1:
     w1 = st.select_slider(f"{t['width']} (1)", options=list(range(135, 355, 5)), value=295, key="w1")
     p1 = st.select_slider(f"{t['profile']} (1)", options=list(range(20, 85, 5)), value=35, key="p1")
     r1 = st.number_input(f"{t['rim']} (1)", value=21, step=1, key="r1")
-    with col2:
+with col2:
     st.subheader(t["header_new"]) # Використовуємо словник
     w2 = st.select_slider(f"{t['width']} (2)", options=list(range(135, 355, 5)), value=275, key="w2")
     p2 = st.select_slider(f"{t['profile']} (2)", options=list(range(20, 85, 5)), value=45, key="p2")
