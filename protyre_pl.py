@@ -155,15 +155,15 @@ with col2:
     
     # --- ПОПЕРЕДЖЕННЯ ---
     error_percent = abs(speed_diff)
-    if error_percent > 3.0:
+if error_percent > 3.0:
     # Використовуємо ключ "speedo_too_much" зі словника
     st.error(t["speedo_too_much"].format(err=error_percent))
-    else:
+else:
     # Використовуємо новий ключ "speedo_ok"
     st.success(t["speedo_ok"].format(err=error_percent))
     
     
-    if abs(cl_change_mm) > 15:
+if abs(cl_change_mm) > 15:
     st.warning(t["clearance_check"].format(cm=cl_change_cm))
     
     # --- РЕКЛАМНИЙ БЛОК (Тепер він помітний!) ---
@@ -175,24 +175,24 @@ with col2:
     📞 **Телефонуйте: 067 244 45 03  **
     **про новинки та АКЦІЇ тут: https://www.facebook.com/romigozaluzi/**
     """)
-    if st.button("🌐 Перейти на наш сайт"):
+if st.button("🌐 Перейти на наш сайт"):
     st.write("www.zaluzi.com.ua")
     
     st.caption("Розроблено спеціально для відповідальних автовласників.")
     
     
     # Твій Рекламний Блок
-    with st.expander("🎁 Отримати бонус від розробника"):
+with st.expander("🎁 Отримати бонус від розробника"):
     st.success("незабаром інформація про наступні акції, не пропустіть")
     st.write("☀️ Слідкуйте за знижками в застосунку!")
     st.markdown("📞 **Додайте, будь ласка, коментар чи вподобайку у нашу ФБ сторінку **")
-    if st.button("🌐 www.zaluzi.com.ua"):
+if st.button("🌐 www.zaluzi.com.ua"):
         st.write("Перенаправлення...")
     import segno
     from io import BytesIO
     
     # Створюємо бічну панель для QR-коду
-    with st.sidebar:
+with st.sidebar:
     st.write("### Поділитися додатком")
     
     # Створюємо QR-код, який веде на адресу вашого сайту
