@@ -6,7 +6,7 @@ from io import BytesIO
 # Початок обгортки (без відступу)
 
     # ТУТ ПІШОВ ВІДСТУП (4 пробіли або Tab) ДЛЯ ВСЬОГО КОДУ:
-    st.markdown(
+st.markdown(
     """
     <script async src="https://www.googletagmanager.com"></script>
     <script>
