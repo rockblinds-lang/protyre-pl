@@ -167,7 +167,7 @@ if abs(cl_change_mm) > 15:
     st.warning(t["clearance_check"].format(cm=cl_change_cm))
     
     # --- РЕКЛАМНИЙ БЛОК (Тепер він помітний!) ---
-    st.success("🎁 СПЕЦІАЛЬНА ПРОПОЗИЦІЯ ВІД РОЗРОБНИКА")
+    st.success("🎁 Twoj detaling to WROCARS")
     st.markdown("""
     **Якісні жалюзі та ролети від "РОМІГО"**  
     ☀️ Захистіть свою оселю від яскравості сонця!  
