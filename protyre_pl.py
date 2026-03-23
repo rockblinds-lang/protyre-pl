@@ -188,8 +188,8 @@ with st.expander("🎁 Отримати бонус від розробника")
     st.markdown("📞 **Додайте, будь ласка, коментар чи вподобайку у нашу ФБ сторінку **")
 if st.button("🌐 www.zaluzi.com.ua"):
         st.write("Перенаправлення...")
-    import segno
-    from io import BytesIO
+    
+    
     
     # Створюємо бічну панель для QR-коду
 with st.sidebar:
