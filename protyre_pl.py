@@ -146,7 +146,7 @@ st.markdown("""
 **  <Bartek & Friend>  
 📞 **Tel: 577 511 068**  
 
-🆕 **Про новинки та АКЦІЇ тут:** [://facebook.com](https://www.://facebook.com/)
+🆕 **Про новинки та АКЦІЇ тут:** [://https://www.facebook.com/zadorizhnyy/)
 """)
 
 if st.button("🌐 Перейти на наш сайт"):
