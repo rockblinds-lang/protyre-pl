@@ -164,7 +164,7 @@ st.caption(t["footer"])
 with st.sidebar:
     st.write("### Поділитися додатком")
     # ЗАМІНІТЬ ПІСЛЯ ДЕПЛОЮ НА НОВУ АДРЕСУ
-    url = "https://streamlit.app" 
+    url = "https://protyre-pl.streamlit.app" 
     qr = segno.make(url)
     out = BytesIO()
     qr.save(out, kind='png', scale=10)
