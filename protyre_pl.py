@@ -3,9 +3,9 @@ import segno
 from io import BytesIO
 
 # 1. Налаштування сторінки
-st.set_page_config(page_title="WRO CARS & ProTire", layout="centered", page_icon="🏎️")
+st.set_page_config(page_title="WROCARS & ProTire", layout="centered", page_icon="🏎️")
 
-# --- СТИЛІЗАЦІЯ WRO CARS (Золото на темному фоні для акцентів) ---
+# --- СТИЛІЗАЦІЯ WROCARS (Золото на темному фоні для акцентів) ---
 st.markdown("""
     <style>
     .wrocars-card {
@@ -44,8 +44,8 @@ st.markdown("""
 # 2. Словник перекладів
 translations = {
     "UA": {
-        "main_title": "WRO CARS: Твій шинний експерт",
-        "ad_title": "WRO CARS DETAILING",
+        "main_title": "WROCARS: Твій шинний експерт",
+        "ad_title": "WROCARS DETAILING",
         "ad_desc": "Професійний догляд за авто у Вроцлаві. Шиномонтаж, кераміка, хімчистка.",
         "map_btn": "📍 Маршрут (Google Maps)",
         "call_btn": "📞 Подзвонити: 577 511 068",
