@@ -140,10 +140,10 @@ st.divider()
 st.success(f"🎁 {t['special_offer']}")
 
 st.markdown("""
-### **WROCARS"**  
+### **"WROCARS"**  
 ☀️ **WROCARS - Twoj detaling**  
 📍 Wroclaw-Wojkowice-Wrocars (WWW),  
-**Bartek & Friend  
+**  <Bartek & Friend>  
 📞 **Tel: 577 511 068**  
 
 🆕 **Про новинки та АКЦІЇ тут:** [://facebook.com](https://www.://facebook.com/)
