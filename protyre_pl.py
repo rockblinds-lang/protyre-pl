@@ -70,14 +70,20 @@ translations = {
 }
 
 # --- САЙДБАР ---
+import os
+
 with st.sidebar:
-    # Відображення вашого логотипу (файл має бути в папці додатка)
-    try:
-        st.image("logo.jpg", use_container_width=True)
-    except:
-        st.header("WRO CARS")
+    # Точна назва вашого файлу з пробілом та розширенням .jpeg
+    file_name = "logo Wrocars.jpeg"
     
-    lang = st.selectbox("Language / Мова", ["PL", "UA"])
+    if os.path.exists(file_name):
+        st.image(file_name, use_container_width=True)
+    else:
+        # Якщо файл все одно не бачить, виведемо список файлів для перевірки
+        st.error(f"Файл '{file_name}' не знайдено")
+        st.write("Доступні файли:", os.listdir("."))
+    
+    lang = st.selectbox("Language / Мова", ["UA", "PL"])
     t = translations[lang]
     
     st.divider()
