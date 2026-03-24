@@ -142,9 +142,9 @@ st.success(f"🎁 {t['special_offer']}")
 st.markdown("""
 ### **WROCARS"**  
 ☀️ **WROCARS - Twoj detaling**  
-📍 м. Львів, вул. Зелена 115з (вхід з вул.Півколо),  
-**ТК "Південний"** навпроти поліклініки "Веселка"  
-📞 **Телефонуйте: 067 244 45 03**  
+📍 Wroclaw-Wojkowice-Wrocars (WWW),  
+**Bartek & Friend  
+📞 **Tel: 577 511 068**  
 
 🆕 **Про новинки та АКЦІЇ тут:** [://facebook.com](https://www.://facebook.com/)
 """)
