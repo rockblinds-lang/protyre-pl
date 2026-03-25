@@ -126,9 +126,10 @@ with col1:
 
 with col2:
     st.subheader(t["header_new"])
-    w2 = st.select_slider(f"{t['width']} (2)", options=list(range(135, 355, 5)), value=275, key="w2")
-    p2 = st.select_slider(f"{t['profile']} (2)", options=list(range(20, 85, 5)), value=45, key="p2")
-    r2 = st.number_input(f"{t['rim']} (2)", value=21, step=1)
+    w2 = st.select_slider(f"{t['width']} (2)", options=list(range(135, 355, 5)), value=275, key="w2_new")
+    p2 = st.select_slider(f"{t['profile']} (2)", options=list(range(20, 85, 5)), value=45, key="p2_new")
+    # Тут має бути 4 пробіли від краю:
+    r2 = st.number_input(f"{t['rim']} (2)", value=21, step=1, key="r2")
 
 # Розрахунки
 diam1 = (w1 * p1 / 100 * 2) + (r1 * 25.4)
@@ -136,11 +137,19 @@ diam2 = (w2 * p2 / 100 * 2) + (r2 * 25.4)
 diff = diam2 - diam1
 cl_change_mm = diff / 2
 
+# Розрахунок швидкості
+speed_real = (diam2 / diam1) * 100 if diam1 != 0 else 0
+speed_diff = speed_real - 100
+
 st.subheader(f"📊 {t['header_comparison']}:")
 m_col1, m_col2, m_col3 = st.columns(3)
-m_col1.metric("Ø Поточний", f"{diam1:.0f} мм")
-m_col2.metric("Ø Новий", f"{diam2:.1f} мм", f"{diff:.1f} мм")
-m_col3.metric("Кліренс", f"{cl_change_mm:+.1f} мм")
 
+# В середині with — знову 4 пробіли:
+with m_col1:
+    st.metric("Ø Поточний", f"{diam1:.1f} мм")
+with m_col2:
+    st.metric("Ø Новий", f"{diam2:.1f} мм", f"{diff:+.1f} мм")
+with m_col3:
+    st.metric("Кліренс", f"{cl_change_mm:+.1f} мм")
 st.markdown("---")
 st.caption(f"© 2024 | {t['footer']}")
