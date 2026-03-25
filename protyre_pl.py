@@ -43,27 +43,15 @@ st.markdown("""
 
 # 2. Словник перекладів
 translations = {
-    "UA": {
-        "main_title": "WROCARS: Твій шинний експерт",
-        "ad_title": "WROCARS DETAILING",
-        "ad_desc": "Професійний догляд за авто у Вроцлаві. Шиномонтаж, кераміка, хімчистка.",
-        "map_btn": "📍 Маршрут (Google Maps)",
-        "call_btn": "📞 Подзвонити: 577 511 068",
-        "header_current": "⬅️ Поточні шини",
-        "header_new": "➡️ Нові шини",
-        "header_comparison": "Результати порівняння",
-        "width": "Ширина", "profile": "Профіль", "rim": "Діаметр",
-        "footer": "WRO CARS Detailing — мистецтво догляду за авто."
-    },
     "PL": {
         "main_title": "WRO CARS: Twój ekspert oponiarski",
         "ad_title": "WRO CARS DETAILING",
         "ad_desc": "Profesjonalna pielęgnacja aut we Wrocławiu. Serwis opon, ceramika, detailing.",
         "map_btn": "📍 Nawiguj (Google Maps)",
         "call_btn": "📞 Zadzwoń: 577 511 068",
-        "width": "Szerokość",          # <-- DODANO
-        "profile": "Profil",            # <-- DODANO
-        "rim": "Felga",                 # <-- DODANO
+        "width": "Szerokość",
+        "profile": "Profil",
+        "rim": "Felga",
         "header_current": "⬅️ Aktualne opony",
         "header_new": "➡️ Nowe opony",
         "header_comparison": "Wyniki porównania",
@@ -76,8 +64,30 @@ translations = {
         "unit_mm": "mm",
         "unit_kmh": "km/h",
         "footer": "WRO CARS Detailing — pasja do perfekcji."
+    },
+    "UK": {
+        "main_title": "WRO CARS: Твій експерт з шин",
+        "ad_title": "WRO CARS DETAILING",
+        "ad_desc": "Професійний догляд за авто у Вроцлаві. Сервіс шин, кераміка, детейлінг.",
+        "map_btn": "📍 Навігація (Google Maps)",
+        "call_btn": "📞 Дзвоніть: 577 511 068",
+        "width": "Ширина",
+        "profile": "Профіль",
+        "rim": "Диск",
+        "header_current": "⬅️ Актуальні шини",
+        "header_new": "➡️ Нові шини",
+        "header_comparison": "Результати порівняння",
+        "diameter_current": "Ø Поточний",
+        "diameter_new": "Ø Новий",
+        "clearance": "Кліренс",
+        "speed_header": "Показники швидкості (при 100 км/год)",
+        "speed_real": "Реальна швидкість",
+        "speed_diff": "Відхилення",
+        "unit_mm": "мм",
+        "unit_kmh": "км/год",
+        "footer": "WRO CARS Detailing — пасія до перфекції."
     }
-
+}
 
 # --- САЙДБАР ---
 import os
