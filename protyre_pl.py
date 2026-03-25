@@ -73,6 +73,7 @@ translations = {
         "unit_mm": "mm",
         "unit_kmh": "km/h"
     }
+}
 
 
 # --- САЙДБАР ---
