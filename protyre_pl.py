@@ -151,18 +151,19 @@ with m_col2:
     st.metric("Ø Новий", f"{diam2:.1f} мм", f"{diff:+.1f} мм")
 with m_col3:
     st.metric("Кліренс", f"{cl_change_mm:+.1f} мм")
+# 1. Розрахунок (має бути вище)
 speed_real = (diam2 / diam1) * 100 if diam1 != 0 else 0
 speed_diff = speed_real - 100
 
-# 2. Вивід на екран (створюємо ще дві колонки під основними)
-st.write(f"**{t['speed_header']}**") # Заголовок для секції швидкості
+# 2. Вивід (без використання словника t)
+st.markdown("### 🏎️ Показники швидкості (при 100 км/год)") 
 s_col1, s_col2 = st.columns(2)
 
 with s_col1:
-    st.metric(t["speed_real"], f"{speed_real:.1f} км/год")
+    st.metric("Реальна швидкість", f"{speed_real:.1f} км/год")
 
 with s_col2:
-    st.metric(t["speed_diff"], f"{speed_diff:+.1f} км/год")
+    st.metric("Відхилення", f"{speed_diff:+.1f} км/год")
 
 
 st.markdown("---")
