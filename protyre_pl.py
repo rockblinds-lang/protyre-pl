@@ -105,6 +105,24 @@ with st.sidebar:
     
     lang = st.selectbox("Language / Мова", ["UA", "PL"])
     t = translations[lang]
+
+    st.markdown(f"""
+    <div style="background-color: #1a1a1a; padding: 25px; border-radius: 15px; border-left: 8px solid #d4af37; margin-bottom: 20px;">
+        <h2 style="color: #d4af37; margin: 0;">WRO CARS DETAILING</h2>
+        <p style="color: #ffffff; font-size: 0.9em; margin: 5px 0;">Wojkowice, Gmina Żórawina</p>
+        <p style="color: #cccccc; margin-top: 15px;">{t.get('promo_text', 'Profesjonalna pielęgnacja aut. Serwis opon, ceramika, detailing.')}</p>
+    </div>
+""", unsafe_allow_html=True)
+
+col_nav, col_phone = st.columns(2)
+
+with col_nav:
+    st.link_button(f"📍 {t.get('nav_btn', 'Nawiguj (Google Maps)')}", 
+                   "https://google.com", 
+                   use_container_width=True)
+
+with col_phone:
+    st.link_button("📞 Zadzwoń: 577 511 068", "tel:+48577511068", use_container_width=True)
     
     st.divider()
     st.write("### 📲 Поділитися")
