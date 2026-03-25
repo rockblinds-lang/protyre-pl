@@ -61,19 +61,22 @@ translations = {
         "ad_desc": "Profesjonalna pielęgnacja aut we Wrocławiu. Serwis opon, ceramika, detailing.",
         "map_btn": "📍 Nawiguj (Google Maps)",
         "call_btn": "📞 Zadzwoń: 577 511 068",
+        "width": "Szerokość",          # <-- DODANO
+        "profile": "Profil",            # <-- DODANO
+        "rim": "Felga",                 # <-- DODANO
         "header_current": "⬅️ Aktualne opony",
         "header_new": "➡️ Nowe opony",
         "header_comparison": "Wyniki porównania",
         "diameter_current": "Ø Aktualny",
         "diameter_new": "Ø Nowy",
-        "clearance": "Prześwit", # або "Kliper" залежно від стилю
+        "clearance": "Prześwit",
         "speed_header": "Wskaźniki prędkości (przy 100 km/h)",
         "speed_real": "Prędkość rzeczywista",
         "speed_diff": "Odchylenie",
         "unit_mm": "mm",
-        "unit_kmh": "km/h"
+        "unit_kmh": "km/h",
+        "footer": "WRO CARS Detailing — pasja do perfekcji."
     }
-}
 
 
 # --- САЙДБАР ---
