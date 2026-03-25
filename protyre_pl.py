@@ -64,9 +64,15 @@ translations = {
         "header_current": "⬅️ Aktualne opony",
         "header_new": "➡️ Nowe opony",
         "header_comparison": "Wyniki porównania",
-        "width": "Szerokość", "profile": "Profil", "rim": "Felga",
-        "footer": "WRO CARS Detailing — pasja do perfekcji."
-    }
+        "diameter_current": "Ø Aktualny",
+        "diameter_new": "Ø Nowy",
+        "clearance": "Prześwit", # або "Kliper" залежно від стилю
+        "speed_header": "Wskaźniki prędkości (przy 100 km/h)",
+        "speed_real": "Prędkość rzeczywista",
+        "speed_diff": "Odchylenie",
+        "unit_mm": "mm",
+        "unit_kmh": "km/h"
+    },
 }
 
 # --- САЙДБАР ---
