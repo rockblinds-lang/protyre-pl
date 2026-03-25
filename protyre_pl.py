@@ -43,7 +43,7 @@ st.markdown("""
 
 # 2. Словник перекладів
 translations = {
-    "pl": {
+    "PL": {
         "main_title": "WRO CARS: Twój ekspert oponiarski",
         "ad_title": "WRO CARS DETAILING",
         "ad_desc": "Profesjonalna pielęgnacja aut we Wrocławiu. Serwis opon, ceramika, detailing.",
@@ -65,7 +65,7 @@ translations = {
         "unit_kmh": "km/h",
         "footer": "WRO CARS Detailing — pasja do perfekcji."
     },
-    "uk": {
+    "UA": {
         "main_title": "WRO CARS: Твій експерт з шин",
         "ad_title": "WRO CARS DETAILING",
         "ad_desc": "Професійний догляд за авто у Вроцлаві. Сервіс шин, кераміка, детейлінг.",
