@@ -189,29 +189,11 @@ with s_col1:
 with s_col2:
     st.metric(t["speed_diff"], f"{speed_diff:+.1f} {t.get('unit_kmh', 'км/год')}")
 
-# --- БЛОК НАВІГАЦІЇ В ФУТЕРІ (ВСТАВИТИ В КІНЕЦЬ) ---
-st.divider() # Тонка лінія-розділювач
-
-# Створюємо дві колонки для кнопок
-col_map, col_call = st.columns(2)
-
-with col_map:
-    # Посилання на Google Maps з вашими координатами
-    st.link_button(
-        label=f"📍 {t.get('nav_btn', 'Nawiguj (Google Maps)')}", 
-        url="https://google.com", 
-        use_container_width=True
-    )
-
-with col_call:
-    # Кнопка прямого дзвінка
-    st.link_button(
-        label=f"📞 {t.get('call_btn', 'Zadzwoń: 577 511 068')}", 
-        url="tel:+48577511068", 
-        use_container_width=True
-    )
-
 # --- ФУТЕР ---
+st.markdown("---")
+st.caption(f"© 2024 | {t['footer']}")
+
+
 st.markdown("---")
 st.caption(f"© 2024 | {t['footer']}")
 
