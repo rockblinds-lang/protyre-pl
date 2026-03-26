@@ -194,8 +194,7 @@ st.markdown("---")
 st.caption(f"© 2024 | {t['footer']}")
 
 
-st.markdown("---")
-st.caption(f"© 2024 | {t['footer']}")
+
 
 
 
