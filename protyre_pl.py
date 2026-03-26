@@ -128,8 +128,9 @@ st.markdown(f"""
 
 c1, c2 = st.columns(2)
 with c1:
-    # Пряме посилання за вашими координатами
-    st.link_button(t["map_btn"], "https://google.com", use_container_width=True)
+    # Пряме посилання на маршрут до Wrocławska 12A, Wojkowice
+    map_url = "https://google.com"
+    st.link_button(t["map_btn"], map_url, use_container_width=True)
 with c2:
     # Кнопка швидкого виклику (працює на смартфонах)
     st.link_button(t["call_btn"], "tel:577511068", use_container_width=True)
