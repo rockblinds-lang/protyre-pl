@@ -129,7 +129,7 @@ st.markdown(f"""
 c1, c2 = st.columns(2)
 with c1:
     # ТУТ МИ ВСТАВИЛИ ВАШІ КООРДИНАТИ (50.98578, 17.06936) ПРЯМО В ПОСИЛАННЯ:
-    map_url = "https://google.com"
+    map_url = "https://www.google.com/maps/place/Wroc%C5%82awska+12,+55-020+Wojkowice,+%D0%9F%D0%BE%D0%BB%D1%8C%D1%89%D0%B0/@50.9857661,17.0670902,710m/data=!3m2!1e3!4b1!4m6!3m5!1s0x470fdb230ca0ff11:0x39cf2f5d037e549c!8m2!3d50.9857628!4d17.0696651!16s%2Fg%2F11c2dkrbc4?authuser=0&entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D"
     
     # Тепер ця кнопка відкриє маршрут саме до вас
     st.link_button(t["map_btn"], map_url, use_container_width=True)
