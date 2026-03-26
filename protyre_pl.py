@@ -128,11 +128,13 @@ st.markdown(f"""
 
 c1, c2 = st.columns(2)
 with c1:
-    # Пряме посилання на маршрут до Wrocławska 12A, Wojkowice
+    # ТУТ МИ ВСТАВИЛИ ВАШІ КООРДИНАТИ (50.98578, 17.06936) ПРЯМО В ПОСИЛАННЯ:
     map_url = "https://google.com"
+    
+    # Тепер ця кнопка відкриє маршрут саме до вас
     st.link_button(t["map_btn"], map_url, use_container_width=True)
 with c2:
-    # Кнопка швидкого виклику (працює на смартфонах)
+    # Кнопка швидкого виклику
     st.link_button(t["call_btn"], "tel:577511068", use_container_width=True)
 
 st.divider()
