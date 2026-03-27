@@ -129,7 +129,7 @@ st.markdown(f"""
 c1, c2 = st.columns(2)
 with c1:
     # ТУТ МИ ВСТАВИЛИ ВАШІ КООРДИНАТИ (50.98578, 17.06936) ПРЯМО В ПОСИЛАННЯ:
-    map_url = "https://www.https://www.google.com/maps/@50.9855965,17.0689802,89m/data=!3m1!1e3?authuser=0&entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D"
+    map_url = "https://google.com/maps/@50.9855965,17.0689802,89m/data=!3m1!1e3?authuser=0&entry=ttu&g_ep=EgoyMDI2MDMyMy4xIKXMDSoASAFQAw%3D%3D"
     
     # Тепер ця кнопка відкриє маршрут саме до вас
     st.link_button(t["map_btn"], map_url, use_container_width=True)
